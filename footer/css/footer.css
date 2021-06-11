@@ -1,0 +1,63 @@
+
+footer{
+     position: relative;
+     width: 100%;
+     height: auto;
+     padding: 50px 100px;
+     background: #F3F3F3;
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+ }
+footer .container{
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     flex-direction: row;
+ }
+footer .container .noidung{
+	margin-right: 100px;
+}
+footer .container .noidung{
+	width: 20%;
+}
+footer .container .noidung h2{
+	position: relative;
+	color: #000000;
+	font-weight: 500;
+	margin-bottom: 15px;
+}
+foter .container .noidung p{
+	color: #000000;
+}
+.icon{
+	margin-top: 20px;
+	display: flex;
+}
+.icon li{
+	list-style: none;
+}
+.icon li a{
+	 display: inline-block;
+     width: 40px;
+     height: 40px;
+     background: #F3F3F3;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-right: 10px;
+     text-decoration: none;
+     border-radius: 4px;
+}
+footer .container .chinhsach h2{
+	position: relative;
+	color: #000000;
+	font-weight: 500;
+	margin-bottom: 15px;
+}
+footer .container .lienhe h2{
+	position: relative;
+	color: #000000;
+	font-weight: 500;
+	margin-bottom: 15px;
+}
