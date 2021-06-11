@@ -88,6 +88,10 @@ sub{
     background: var(--primary);
     color: var(--light);
 }
+.btn-delete{
+    background: var(--danger);
+    color: var(--light);
+}
 @media (min-width: 740px) and (max-width: 1023px) {
     .wide {
         width: 644px;

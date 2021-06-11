@@ -56,77 +56,7 @@ header{
     height: 150px;
     padding: var(--lg-padding);
     grid-area: header;
-    background: var(--primary);
-}
-.header-container{
-    display: grid;
-    grid-template-areas: 
-    'navbar-top'
-    'navbar-middle'
-    'navbar-bottom';
-    gap: var(--md-padding);
-}
-.nav{
-    margin: 0;
-}
-.navbar-top{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-.nav-left-item,
-.nav-right-item{
-    display: inline-block;
-}
-.navbar-top a{
-    text-decoration: none;
-    color: var(--light);
-}
-
-.navbar-middle{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-
-}
-.logo{
-    width: 200px;
-    margin: 0;
-}
-.logo img{
-    width: 150px;
-    
-}
-.searchbox{
-    
-}
-.searchbox-container{
-    width: 100%;
-    position: relative;
-    min-width: 300px;
-    height: 40px;
-    background: var(--light);
-    padding: var(--lg-padding);
-    justify-content: baseline;
-}
-.searchbox-container .btn-search{
-    height: 30px;
-    position: absolute;
-    top: 5px;
-    right: 4px;
-    color: var(--light);
-    display: inline-block;
-    background: var(--primary);
-}
-.searchbox-container input{
-    outline: none;
-    border: none;
-    height: 100%;
-    width: 100%;
-}
-.cart-icon{
-    width: 150px;
-    margin: 0;
+    background: var(--warning);
 }
 
 

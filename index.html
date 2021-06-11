@@ -5,6 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/header.css">
 <link rel="stylesheet" href="/css/product-card.css">
 <link rel="stylesheet" href="/css/category-card.css">
 <link rel="stylesheet" href="/css/footer.css">
@@ -16,70 +17,19 @@
 <div class="root">
     <div class="app">
         <header class="header-wrapper">
-            <div class="wide header-container">
-                    <div class="navbar-top">
-                        <ul class="nav nav-left">
-                            <li class="nav-left-item">
-                                <a href="" class="item-link policies-link">Policies</a>
-                            </li>
-                            <li class="nav-left-item">
-                                <a href="" class="item-link terms-link">Terms</a>
-                            </li>
-                            <li class="nav-left-item">
-                                <div class="item-link social-link">
-                                    <span>Kết nối</span>
-                                    <label for="">
-                                        <a href=""><i class="fa fa-facebook-f"></i></a>
-                                    </label>
-                                    <label for="">
-                                        <a href=""><i class="fa fa-instagram"></i></a>
-                                    </label>
-                                </div>
-                            </li>
-                        </ul>
-                        <ul class="nav nav-right">
-                            <li class="nav-right-item">
-                                <div class="item notification">
-                                    <label for="">
-                                        <i class="fa fa-bell"></i>
-                                        <span>notification</span>
-                                    </label>
-                                </div>
-                            </li>
-                           <li class="nav-right-item">
-                                <div class="item notification">
-                                    <label for="">
-                                        <i class="fa fa-question-circle"></i>
-                                        <span><a href="">Help</a></span>
-                                    </label>
-                                </div>
-                           </li>
-                           <li class="nav-right-item">
-                                <div class="item login">
-                                   <span><a href="register.html">Đăng kí</a></span>
-                                   <span><a href="login.html">Đăng nhập</a></span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="navbar-middle">
-                        <div class="logo">
-                            <img src="/assets/img/logo.png" alt="">
-                        </div>
-                        <div class="search-wrapper">
-                            <div class="searchbox">
-                                <input type="text" name="" id="">
-                                <button class="btn btn-search"><i class="fa fa-search"></i>Search</button>
-                            </div>
-                        </div>
-                        <div class="cart-icon">
-                            <i class="fa fa-cart-plus">
-
-                            </i>
-                        </div>
-                    </div>
-                    <div class="navbar-bottom"></div>
-            </div>
+            <nav class="wide navigation">
+                <div class="navigation__content"> <img src="/assets/img/logo 3.png" alt="logo" class="navigation__logo" />
+                  <input
+                      type="text"
+                      placeholder="Tìm kiếm sản phẩm"
+                      class="navigation__input"
+                    />
+                  <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#"><i class="fa fa-lock"></i>Đăng nhập</a></li>
+                    <li class="navigation__item"><a href="#"><i class="fa fa-book"></i>Đăng Kí</a></li>
+                    <li class="navigation__item"><a href="#"><i class="fa fa-cart-arrow-down"></i>Giỏ hàng</a></li>
+                  </ul>
+                </div>
         </header>
         <main class="main" id="main">
             <section class="slider-wrapper">
@@ -389,8 +339,8 @@
                                             </p>
                                         </div> -->
                                         <div class="p-relative">
-                                            <button class="btn btn-primary quick-view">Quick view</button>
-                                            <button class="btn btn-primary add">Add to cart</button>
+                                            <button class="btn btn-delete quick-view">Quick view</button>
+                                            <button class="btn btn-delete add">Add to cart</button>
                                         </div>
                                     </div>
                                 </div>
