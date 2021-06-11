@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/register.css">
+    <title>Register</title>
+</head>
+<body>
+    <div class="container">
+        <div class="register-form">
+            <div class="form__title">
+                <h2 class="form-title">Registration</h2>
+            </div>
+            <div class="form__details">
+                <form action="#" method="POST" class="form" id="form">
+                    <div class="user-details">
+                        <div class="input-box inp1">
+                            <label for="firstname">first name</label>
+                            <input type="text" class="success" name="" id="firstname" placeholder="VU" required>
+                            <i class="fa fa-check-circle"></i>
+                            <i class="fa fa-exclamation-circle"></i>
+                            <small class="error-message">abc</small>
+                        </div>
+                        <div class="input-box inp2">
+                            <label for="lastname">last name</label>
+                            <input type="text" class="danger" name="" id="lastname" placeholder="Tung" required>
+                            <i class="fa fa-check-circle"></i>
+                            <i class="fa fa-exclamation-circle"></i>
+                            <small class="error-message">abc</small>
+                        </div>
+                        <div class="input-box inp3">
+                            <label for="birthday">birthday</label>
+                            <input type="date" name="" id="birthday" value="1900-01-01" required>
+                        </div>
+                        <div class="input-box inp4">
+                            <label for="gender">gender</label>
+                            <div class="gender-group">
+                                <input type="radio" name="gender" id="male" checked>
+                                <label for="male">male</label>
+                                <input type="radio" name="gender" id="female">
+                                <label for="female">female</label>
+                                <input type="radio" name="gender" id="orther">
+                                <label for="orther">orther</label>
+                            </div>
+                        </div>
+                        <div class="input-box inp5">
+                            <label for="address">address</label>
+                            <input type="text" name="" id="address" placeholder="123 Tran Hung Dao Street, Hai Ba Trung, Ha Noi" required>
+                            <i class="fa fa-check-circle"></i>
+                            <i class="fa fa-exclamation-circle"></i>
+                            <small class="error-message">abc</small>
+                        </div>
+                        <div class="input-box inp6">
+                            <label for="email">email</label>
+                            <input type="text" name="" id="email"  placeholder="username@example.com" required>
+                            <i class="fa fa-check-circle"></i>
+                            <i class="fa fa-exclamation-circle"></i>
+                            <small class="error-message">abc</small>
+                        </div>
+                        <div class="input-box inp7">
+                            <label for="phone">phone</label>
+                            <input type="text" name="" id="phone" placeholder="(+84)123-4567-89" required>
+                            <i class="fa fa-check-circle"></i>
+                            <i class="fa fa-exclamation-circle"></i>
+                            <small class="error-message">abc</small>
+                        </div>
+                    </div>
+                    <button type="submit" value="submit">next</button>
+                </form>
+                <div class="login-link">
+                    <span class="link">Already member? <a href="login.html">Login now</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/validator.js"></script>
+    <script>
+
+        //tạo ra đối tượng để dùng nó để xác thực
+        //Trong đó name: tên form cần xác thực, rules là mảng chứa các trường trong form cần xác thực
+         Validator({
+         name: '#form',
+         rules:[
+             Validator.isRequired('#firstname'),
+             Validator.isRequired('#lastname'),
+             Validator.isRequired('#address'),
+             Validator.isRequired('#phone'),
+             Validator.isEmail('#email'),
+             Validator.isPhone('#phone'),
+             Validator.minLength('#passwd', 8),
+         ]
+         });
+    </script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+:root{
+    --primary-color: #0d6efd;
+    --secondary-color: #8d949a;
+    --success-color: #198754;
+    --danger-color: #dc3545;
+    --wanrning-color:#ffc107;
+    --info-color: #0dcaf0;
+    --dark-color: #212529;
+    --while-color:#fff;
+    --black-color:#000;
+    --border-color:#d8e3e7;
+    --border1-color:#7868e6;
+    --bg-card-color: #e2e5ec;
+    --bg-card1-color: #f6f8fa;
+    --bg-color:#ffffff;
+    --bg2-color: #fff5fd;
+}
+body{
+    background:var(--bg-color);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-size: cover;
+    
+}
+.register-form{
+    width: 100%;
+    max-width: 400px;
+    background: var(--bg-card-color);
+    border-radius: 5px;
+    padding: 10px;
+}
+.register-form .form__title{
+    padding-bottom: 20px;
+}
+.register-form .form__title h2{
+    padding-bottom: 4px;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+}
+.register-form .form__details{
+    
+    width: 100%;
+}
+.form__details form .user-details{
+    border-radius: 10px;
+    max-height: 400px;
+    overflow-y: scroll;
+     width: 100%;
+}
+
+form .user-details .input-box{
+    padding: 4px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    background: var(--while-color);
+    position: relative;
+    /* box-shadow: 0 4px 18px -4px rgba(0,0,0,0.35); */
+}
+.user-details .input-box>label{
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.user-details .input-box input{
+    outline: none;
+    width: 100%;
+    border-radius: 10px;
+    text-overflow: ellipsis;
+    padding: 8px 30px 8px 8px;
+    border: 2px solid var(--secondary-color);
+}
+.user-details .input-box input[type="date"]{
+    padding: 8px;
+}
+.user-details .input-box>input:focus{
+    border-color: var(--wanrning-color);
+}
+.user-details .input-box.success input[type="text"]{
+    border-color: var(--success-color);
+}
+.user-details .input-box.danger input[type="text"]{
+    border-color: var(--danger-color);
+}
+.user-details .input-box .error-message{
+    color: var(--danger-color);
+    visibility: hidden;
+}
+.user-details .input-box.danger .error-message{
+    visibility: visible;
+}
+.user-details .input-box i{
+    top: 45px;
+    right: 10px;
+    position: absolute;
+    visibility: hidden;
+}
+.input-box.success input[type="text"]~i.fa.fa-check-circle{
+    visibility: visible;
+    color: var(--success-color);
+}
+.input-box.danger input[type="text"]~i.fa.fa-exclamation-circle{
+    visibility: visible;
+    color: var(--danger-color);
+}
+.form__details button{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 8px;
+    margin: 8px 0;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    color: var(--danger-color);
+    text-transform: uppercase;
+    background: var(--while-color);
+    transition: all 0.6s ease-in-out;
+
+}
+.form__details button:hover{
+    color: var(--while-color);
+    background-color: var(--primary-color);
+}
+.form__details .login-link{
+    text-align: center;
+}
+
+.input-box .gender-group{
+    margin: 0 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.input-box .gender-group input[type='radio']{
+    display: none;
+}
+.input-box .gender-group label{
+    display: block;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+    background: var(--white-color);
+    box-shadow: 0 4px 12px -4px rgba(0,0,0,0.35);
+}
+.input-box .gender-group label:hover{
+    color: var(--while-color);
+    background: var(--danger-color);
+}
+.gender-group input[type="radio"]:checked+label{
+    background: var(--primary-color);
+    color: var(--while-color);
+}
+
+
+
+
+
+
+
+@media (min-width: 1240px){
+   .register-form{
+       max-width: 500px;
+   }
+    .form__details form .user-details{
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 0 8px;
+      overflow-y: hidden;
+    }
+    .inp1{
+        grid-column: 1/7;
+    }
+    .inp2{
+        grid-column: 7/13;
+    }
+    .inp3{
+        grid-column: 1/6;
+    }
+    .inp4{
+        grid-column: 6/13;
+    }
+    .inp5{
+        grid-column: 1/13;
+    }
+    .inp6{
+        grid-column: 1/7;
+    }
+    .inp7{
+        grid-column: 7/13;
+    }
+}

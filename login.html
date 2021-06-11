@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <script src="/js/validator.js"></script>
+    <title>Login now</title>
+</head>
+<body>
+    <div class="container">
+        <div class="login-form">
+            <div class="form__title">
+                <h2 class="form-title">Login</h2>
+            </div>
+            <div class="form__details">
+                <form action="" method="POST" id="form-1">
+                    <div class="user-details">
+                        <div class="input-box">
+                            <label for="username">Username</label>
+                            <input type="text" name="" id="username">
+                            <i class="fa fa-check-circle"></i>
+                            <i class="fa fa-exclamation-circle"></i>
+                            <small class="error-message">abc</small>
+                        </div>
+                        <div class="input-box">
+                            <label for="passwd">Password</label>
+                            <input type="password" name="" id="passwd">
+                            <i class="fa fa-eye passwd-visible"></i>
+                            <i class="fa fa-eye-slash passwd-hidden"></i>
+                            <small class="error-message">abc</small>
+                        </div>
+                        <div class="passwd-link">
+                            <div class="remember-passwd">
+                                <input type="checkbox" name="" id="isremember"> 
+                            <label for="isremember">Remember Me</label>
+                            </div>
+                            <div class="forgot-passwd">
+                                <a href="">Forgot password?</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <button type="submit" value="submit">Login</button>
+                </form>
+                <div class="register-link">
+                    <span class="link">Not a member? <a href="register.html">Create an account</a></span>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <script src="/js/validator.js"></script>
+   <script>
+
+       //tạo ra đối tượng để dùng nó để xác thực
+       //Trong đó name: tên form cần xác thực, rules là mảng chứa các trường trong form cần xác thực
+        Validator({
+        name: '#form-1',
+        rules:[
+            Validator.isRequired('#username'),
+            Validator.minLength('#passwd', 8),
+        ]
+        });
+   </script>
+</body>
+</html>
