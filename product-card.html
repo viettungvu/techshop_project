@@ -12,7 +12,7 @@
 
 <body>
     <div class="p-card-wrapper">
-        <div class="p-card-nest">
+        <div class="p-card-container">
             <div class="p-ribbon">
                 <span class="ribbon ribbon--new">New</span>
             </div>
@@ -20,7 +20,7 @@
                 <img src="/assets/img/cam3.png" alt="" class="fit-img">
             </a>
             <div class="p-text">
-                <a href="" class="p-name">Máy ảnh Canon chính hãng</a>
+                <a href="" class="p-name">Máy ảnh Canon chính hãng Lê Bảo Minh nhập khẩu </a>
                 <span class="p-sku">Mã sản phẩm: SKU21012000</span>
                 <div class="p-price-container">
                     <del class="p-old-price">19.000.000</del>
@@ -28,128 +28,31 @@
                     <span class="p-price">20.000.000 <sup>đ</sup></span>
                 </div>
                 <div class="p-special-container">1 khuyến mãi</div>
-            </div>
-            <!-- <div class="p-tooltip">
-
-                <p class="p-tooltip-title">Máy ảnh Canon chính hãng</p>
-                <p class="tooltip-content">
-                <div class="tooltip-specialOffer">
-                    <div class="special-title">
-                        <span class="title-text">Khuyến mãi</span>
-                    </div>
-                    <ul class="ul">
-                        <li>
-                            <span class="text">Giá trị quà tặng lên đến 800k bao gồm</span>
-                        </li>
-                        <li>
-                            <span class="text">Túi đựng chống ấm</span>
-                        </li>
-                        <li>
-                            <span class="text">Túi đựng chống ấm</span>
-                        </li>
-                        <li>
-                            <span class="text">Túi đựng chống ấm</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="tooltip-summary">
-                    <span class="item">
-                        <i class="fa fa-check-circle">
-                            CPU: Intel® Core™ I5-9300HF (2.40 GHz upto 4.10 GHz, 8MB)
-                        </i>
-                    </span>
-                    <span class="item">
-                        <i class="fa fa-check-circle"></i>
-                    </span>
-                    <span class="item">
-                        <i class="fa fa-check-circle"></i>
-                    </span>
-                    <span class="item"><i class="fa fa-check-circle"></i>
-                    </span>
-                </div>
-                <div class="position-relative">
-                    <del class="p-old-price">19.000.000 VND</del>
-                    <span class="p-tag p-discount">-10%</span>
-                    <span class="p-price">20.000.000 VND</span>
-                </div>
-                </p>
-            </div> -->
+            </div>                                       
             <div class="p-relative">
-                <button class="btn btn-primary quick-view">Quick view</button>
-                <button class="btn btn-primary add">Add to cart</button>
+                <button class="btn btn-quickview">Quick view</button>
+                <button class="btn btn-add active">Add to cart</button>
             </div>
         </div>
-    </div>
-    <div class="p-card-wrapper">
-        <div class="p-card">
-            <div class="p-tag">
-                <span class="tag --new">New</span>
-                <span class="tag --trend">Trending</span>
-            </div>
-            <a href="" class="p-img">
-                <img src="/assets/img/camera-khong-day.png" alt="" class="fit-img">
-            </a>
-            <div class="p-text">
-                <a href="" class="p-name">Máy ảnh Canon chính hãng</a>
-                <span class="p-sku">Mã sản phẩm: SKU21012000</span>
-                <div class="p-price-container">
-                    <del class="p-old-price">19.000.000 <sup>đ</sup></del>
-                    <span class="tag --discount">-10%</span>
-                    <span class="p-price">20.000.000 <sup>đ</sup></span>
-                </div>
-                <div class="p-special-container">1 khuyến mãi</div>
-            </div>
-            <!-- <div class="p-tooltip">
-
-                <p class="p-tooltip-title">Máy ảnh Canon chính hãng</p>
-                <p class="tooltip-content">
-                <div class="tooltip-specialOffer">
-                    <div class="special-title">
-                        <span class="title-text">Khuyến mãi</span>
-                    </div>
-                    <ul class="ul">
-                        <li>
-                            <span class="text">Giá trị quà tặng lên đến 800k bao gồm</span>
-                        </li>
-                        <li>
-                            <span class="text">Túi đựng chống ấm</span>
-                        </li>
-                        <li>
-                            <span class="text">Túi đựng chống ấm</span>
-                        </li>
-                        <li>
-                            <span class="text">Túi đựng chống ấm</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="tooltip-summary">
-                    <span class="item">
-                        <i class="fa fa-check-circle">
-                            CPU: Intel® Core™ I5-9300HF (2.40 GHz upto 4.10 GHz, 8MB)
-                        </i>
-                    </span>
-                    <span class="item">
-                        <i class="fa fa-check-circle"></i>
-                    </span>
-                    <span class="item">
-                        <i class="fa fa-check-circle"></i>
-                    </span>
-                    <span class="item"><i class="fa fa-check-circle"></i>
-                    </span>
-                </div>
-                <div class="position-relative">
-                    <del class="p-old-price">19.000.000 VND</del>
-                    <span class="p-tag p-discount">-10%</span>
-                    <span class="p-price">20.000.000 VND</span>
-                </div>
-                </p>
-            </div> -->
-            <div class="p-relative">
-                <button class="btn btn-primary quick-view">Quick view</button>
-                <button class="btn btn-primary add">Add to cart</button>
-            </div>
-        </div>
-    </div>
+    </div> 
+    <script>
+        const pRelative=document.querySelector('.p-card-wrapper');
+        const quickviewBtn=document.querySelector('.btn-quickview');
+        const addBtn=document.querySelector('.btn-add');
+        pRelative.addEventListener('keydown', changeActive);
+        function changeActive(e){
+            console.log(e.which);
+            if(e.which=='37'){
+                addBtn.classList.remove('active');
+                quickviewBtn.classList.add("active");
+            }
+            if(e.which=='39'){
+                quickviewBtn.classList.remove("active");
+                addBtn.classList.add('active');
+            }
+            console.log(quickviewBtn.className);
+        }
+    </script>
 </body>
 
 </html>

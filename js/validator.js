@@ -33,7 +33,7 @@ Validator.isRequired=function(selector){
     return {
         selector:selector,
         test:function(value){
-            return value.trim().slice(1, value.length)? undefined:selector.toUpperCase()+ ' không được bỏ trống';
+            return value.trim()? undefined:selector.toUpperCase()+ ' không được bỏ trống';
         }
     }
 }
