@@ -4,725 +4,608 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="/css/base.css">
-<link rel="stylesheet" href="/css/product-card.css">
-<link rel="stylesheet" href="/css/category-card.css">
-<link rel="stylesheet" href="/css/footer.css">
-
-<link rel="stylesheet" href="/css/web_pc.css">
+<link rel="stylesheet" href="./css/base.css">
+<link rel="stylesheet" href="./css/product-card.css">
+<link rel="stylesheet" href="./css/category-card.css">
+<link rel="stylesheet" href="./css/footer.css">
+<link rel="stylesheet" href="./css/web_pc.css">
+<link rel="stylesheet" href="./css/header.css">
+<!--<script type="text/javascript" src="./js/cart-modal.js"></script>-->
 <title>TechShop-Thế giới camera</title>
 </head>
 <body>
 <div class="root">
-    <div class="app">
-        <header class="header-wrapper">
-            <div class="wide header-container">
-                    <div class="navbar-top">
-                        <ul class="nav nav-left">
-                            <li class="nav-left-item">
-                                <a href="" class="item-link policies-link">Policies</a>
-                            </li>
-                            <li class="nav-left-item">
-                                <a href="" class="item-link terms-link">Terms</a>
-                            </li>
-                            <li class="nav-left-item">
-                                <div class="item-link social-link">
-                                    <span>Kết nối</span>
-                                    <label for="">
-                                        <a href=""><i class="fa fa-facebook-f"></i></a>
-                                    </label>
-                                    <label for="">
-                                        <a href=""><i class="fa fa-instagram"></i></a>
-                                    </label>
-                                </div>
-                            </li>
-                        </ul>
-                        <ul class="nav nav-right">
-                            <li class="nav-right-item">
-                                <div class="item notification">
-                                    <label for="">
-                                        <i class="fa fa-bell"></i>
-                                        <span>notification</span>
-                                    </label>
-                                </div>
-                            </li>
-                           <li class="nav-right-item">
-                                <div class="item notification">
-                                    <label for="">
-                                        <i class="fa fa-question-circle"></i>
-                                        <span><a href="">Help</a></span>
-                                    </label>
-                                </div>
-                           </li>
-                           <li class="nav-right-item">
-                                <div class="item login">
-                                   <span><a href="register.html">Đăng kí</a></span>
-                                   <span><a href="login.html">Đăng nhập</a></span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="navbar-middle">
-                        <div class="logo">
-                            <img src="/assets/img/logo.png" alt="">
-                        </div>
-                        <div class="search-wrapper">
-                            <div class="searchbox">
-                                <input type="text" name="" id="">
-                                <button class="btn btn-search"><i class="fa fa-search"></i>Search</button>
+  <div class="app">
+    <header class="header-wrapper">
+      <div class="navigation">
+        <div class="navigation-content">
+          <div class="nav nav-left"> <a href="#"><img src="./assets/img/logo 3.png" alt="logo" class="nav-logo" /></a> </div>
+          <div class="nav nav-center">
+            <form class="nav-search">
+              <input type="text" placeholder="Tìm kiếm sản phẩm" class="nav-input"/>
+              <button type="submit"> <i class="fa fa-search"></i> </button>
+            </form>
+          </div>
+          <div class="nav nav-right">
+            <div><a href="#"><i class="fa fa-lock"></i>Đăng nhập</a></div>
+            <div><a href="#"><i class="fa fa-book"></i>Đăng Kí</a></div>
+            <div>
+              <button id="cart-btn"> <i class="fa fa-shopping-cart" aria-hidden="true"></i> Giỏ Hàng </button>
+            </div>
+            <div id="cart-modal" class="modal">
+              <div class="modal-content">
+                <div class="modal-header">
+					<div class="modal-title"><h2>Giỏ Hàng</h2></div>
+					<div></div>
+                    <div class="close">&times;</div> 
+				</div>
+                <div class="modal-body">
+                  <div class="cart-row  cart-row-1"> 
+					  <div class="cart-item cart-header ">Sản Phẩm</div> 
+					  <div class="cart-price cart-header ">Giá</div> 
+					  <div class="cart-quantity cart-header ">Số Lượng</div> 
+				 </div>
+                 <div class="cart-items">
+					 <div class="cart-row">
+                            <div class="cart-item cart-column">
+                                <div><img class="cart-item-image" src="./assets/img/cam3.png" width="100" height="100"></div>
+                                <div class="cart-item-title">Máy ảnh Canon chính hãng</div>
+                            </div>
+                            <div class="cart-price cart-column">20000000VNĐ</div>
+                            <div class="cart-quantity cart-column">
+                                <div><input class="cart-quantity-input" type="number" value="1"></div>
+                                <div><button class="btn btn-danger" type="button">Xóa</button></div>
                             </div>
                         </div>
-                        <div class="cart-icon">
-                            <i class="fa fa-cart-plus">
-
-                            </i>
+                     <div class="cart-row">
+                            <div class="cart-item cart-column">
+                                <div><img class="cart-item-image" src="./assets/img/cam-outdoor.png" width="100" height="100"></div>
+                                <div class="cart-item-title">Máy ảnh Canon chính hãng</div>
+                            </div>
+                            <div class="cart-price cart-column">20000000VNĐ</div>
+                            <div class="cart-quantity cart-column">
+                                <div><input class="cart-quantity-input" type="number" value="1"></div>
+                                <div><button class="btn btn-danger" type="button">Xóa</button></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="navbar-bottom"></div>
+					</div>
+                 <div class="cart-total"> 
+					 <div class="cart-total-title"><strong >Tổng Cộng:</strong></div>
+					 <div class="cart-total-price">40000000VNĐ</div> 
+			     </div>
+                </div>
+                <div class="modal-footer">
+                  <div><button type="button" class="btn btn-secondary close-footer">Đóng</button></div>
+                  <div><button type="button" class="btn btn-primary order">Thanh Toán</button></div>
+                </div>
+              </div>
             </div>
-        </header>
-        <main class="main" id="main">
-            <section class="slider-wrapper">
-               <div class="wide slider-container">
-                   <div class="banner banner1">
-                       <img src="/assets/img/banner1.png" alt="">
-                   </div>
-                   <div class="banner banner2">
-                       <img src="/assets/img/banner2.png" alt="">
-                   </div>
-                   <div class="banner banner3">
-                       <img src="/assets/img/banner2.png" alt="">
-                   </div>
-               </div>
-            </section>
-           
-            <section class="bestsale-wrapper">
-                <div class="wide bestsale-container">
-                    <div class="bestsale-box-title">
-                        <span class="box-title">Top sale</span>
+            <script type="text/javascript">
+				var modal = document.getElementById("cart-modal");
+				var btn = document.getElementById("cart-btn");
+				var close = document.getElementsByClassName("close")[0];
+				var close_footer = document.getElementsByClassName("close-footer")[0];
+				var order = document.getElementsByClassName("order")[0];
+				btn.onclick = function () {
+  					modal.style.display = "block";
+				}
+				close.onclick = function () {
+  					modal.style.display = "none";
+				}
+				close_footer.onclick = function () {
+  					modal.style.display = "none";
+				}
+				order.onclick = function () {
+  					alert("Cảm ơn bạn đã thanh toán đơn hàng")
+				}
+				window.onclick = function (event) {
+  					if (event.target == modal) {
+    				modal.style.display = "none";
+  					}
+				}
+			  </script> 
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main" id="main">
+      <section class="slider-wrapper">
+        <div class="wide slider-container">
+          <div class="banner banner1"> <img src="./assets/img/banner1.png" alt=""> </div>
+          <div class="banner banner2"> <img src="./assets/img/banner2.png" alt=""> </div>
+          <div class="banner banner3"> <img src="./assets/img/banner2.png" alt=""> </div>
+        </div>
+      </section>
+      <section class="bestsale-wrapper">
+        <div class="wide bestsale-container">
+          <div class="bestsale-box-title"> <span class="box-title">Top sale</span> </div>
+          <div class="bestsale-list-wrapper">
+            <ul class="bestsale-list">
+              <li class="bestsale-item">
+                <div class="p-card-wrapper">
+                  <div class="p-card-container">
+                    <div class="p-ribbon"> <span class="ribbon ribbon--new">New</span> </div>
+                    <a href="" class="p-img"> <img src="./assets/img/cam3.png" alt="" class="fit-img"> </a>
+                    <div class="p-text"> <a href="" class="p-name">Máy ảnh Canon chính hãng</a> <span class="p-sku">Mã sản phẩm: SKU21012000</span>
+                      <div class="p-price-container"> <del class="p-old-price">19.000.000</del> <span class="p-discount">-10%</span> <span class="p-price">20.000.000 <sup>đ</sup></span> </div>
+                      <div class="p-special-container">1 khuyến mãi</div>
                     </div>
-                    <div class="bestsale-list-wrapper">
-                        <ul class="bestsale-list">
-                            <li class="bestsale-item">
-                                <div class="p-card-wrapper">
-                                    <div class="p-card-container">
-                                        <div class="p-ribbon">
-                                            <span class="ribbon ribbon--new">New</span>
-                                        </div>
-                                        <a href="" class="p-img">
-                                            <img src="/assets/img/cam3.png" alt="" class="fit-img">
-                                        </a>
-                                        <div class="p-text">
-                                            <a href="" class="p-name">Máy ảnh Canon chính hãng</a>
-                                            <span class="p-sku">Mã sản phẩm: SKU21012000</span>
-                                            <div class="p-price-container">
-                                                <del class="p-old-price">19.000.000</del>
-                                                <span class="p-discount">-10%</span>
-                                                <span class="p-price">20.000.000 <sup>đ</sup></span>
-                                            </div>
-                                            <div class="p-special-container">1 khuyến mãi</div>
-                                        </div>
-                                        <div class="p-relative">
-                                            <button class="btn btn-primary quick-view">Quick view</button>
-                                            <button class="btn btn-primary add">Add to cart</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="product-item">
-                                <div class="p-card-wrapper">
-                                    <div class="p-card-container">
-                                        <div class="p-ribbon">
-                                            <span class="ribbon ribbon--new">New</span>
-                                        </div>
-                                        <a href="" class="p-img">
-                                            <img src="/assets/img/cam-outdoor.png" alt="" class="fit-img">
-                                        </a>
-                                        <div class="p-text">
-                                            <a href="" class="p-name">Máy ảnh Canon chính hãng</a>
-                                            <span class="p-sku">Mã sản phẩm: SKU21012000</span>
-                                            <div class="p-price-container">
-                                                <del class="p-old-price">19.000.000</del>
-                                                <span class="p-discount">-10%</span>
-                                                <span class="p-price">20.000.000 <sup>đ</sup></span>
-                                            </div>
-                                            <div class="p-special-container">1 khuyến mãi</div>
-                                        </div>
-                                      
-                                        <div class="p-relative">
-                                            <button class="btn btn-primary quick-view">Quick view</button>
-                                            <button class="btn btn-primary add">Add to cart</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="product-item">
-                                <div class="p-card-wrapper">
-                                    <div class="p-card-container">
-                                        <div class="p-ribbon">
-                                            <span class="ribbon ribbon--new">New</span>
-                                        </div>
-                                        <a href="" class="p-img">
-                                            <img src="/assets/img/cam3.png" alt="" class="fit-img">
-                                        </a>
-                                        <div class="p-text">
-                                            <a href="" class="p-name">Máy ảnh Canon chính hãng</a>
-                                            <span class="p-sku">Mã sản phẩm: SKU21012000</span>
-                                            <div class="p-price-container">
-                                                <del class="p-old-price">19.000.000</del>
-                                                <span class="p-discount">-10%</span>
-                                                <span class="p-price">20.000.000 <sup>đ</sup></span>
-                                            </div>
-                                            <div class="p-special-container">1 khuyến mãi</div>
-                                        </div>
-                                        
-                                        <div class="p-relative">
-                                            <button class="btn btn-primary quick-view">Quick view</button>
-                                            <button class="btn btn-primary add">Add to cart</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="product-item">
-                                <div class="p-card-wrapper">
-                                    <div class="p-card-container">
-                                        <div class="p-ribbon">
-                                            <span class="ribbon ribbon--new">New</span>
-                                        </div>
-                                        <a href="" class="p-img">
-                                            <img src="/assets/img/cam3.png" alt="" class="fit-img">
-                                        </a>
-                                        <div class="p-text">
-                                            <a href="" class="p-name">Máy ảnh Canon chính hãng</a>
-                                            <span class="p-sku">Mã sản phẩm: SKU21012000</span>
-                                            <div class="p-price-container">
-                                                <del class="p-old-price">19.000.000</del>
-                                                <span class="p-discount">-10%</span>
-                                                <span class="p-price">20.000.000 <sup>đ</sup></span>
-                                            </div>
-                                            <div class="p-special-container">1 khuyến mãi</div>
-                                        </div>
-                                        <div class="p-relative">
-                                            <button class="btn btn-primary quick-view">Quick view</button>
-                                            <button class="btn btn-primary add">Add to cart</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="product-item">
-                                <div class="p-card-wrapper">
-                                    <div class="p-card-container">
-                                        <div class="p-ribbon">
-                                            <span class="ribbon ribbon--new">New</span>
-                                        </div>
-                                        <a href="" class="p-img">
-                                            <img src="/assets/img/cam3.png" alt="" class="fit-img">
-                                        </a>
-                                        <div class="p-text">
-                                            <a href="" class="p-name">Máy ảnh Canon chính hãng</a>
-                                            <span class="p-sku">Mã sản phẩm: SKU21012000</span>
-                                            <div class="p-price-container">
-                                                <del class="p-old-price">19.000.000</del>
-                                                <span class="p-discount">-10%</span>
-                                                <span class="p-price">20.000.000 <sup>đ</sup></span>
-                                            </div>
-                                            <div class="p-special-container">1 khuyến mãi</div>
-                                        </div>
-                                        <div class="p-relative">
-                                            <button class="btn btn-primary quick-view">Quick view</button>
-                                            <button class="btn btn-primary add">Add to cart</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
+                    <div class="p-relative">
+                      <button class="btn btn-primary quick-view">Quick view</button>
+                      <button class="btn btn-primary add">Add to cart</button>
                     </div>
-                    <div class="product-more">
-                        <span>
-                            <a href="">View all >></a>
-                        </span>
-                    </div>
+                  </div>
                 </div>
-            </section>
-            <section class="category-wrapper">
-                <div class="wide category-container">
-                    <div class="category-box-title">
-                        <span class="box-title">Categories</span>
+              </li>
+              <li class="product-item">
+                <div class="p-card-wrapper">
+                  <div class="p-card-container">
+                    <div class="p-ribbon"> <span class="ribbon ribbon--new">New</span> </div>
+                    <a href="" class="p-img"> <img src="./assets/img/cam-outdoor.png" alt="" class="fit-img"> </a>
+                    <div class="p-text"> <a href="" class="p-name">Máy ảnh Canon chính hãng</a> <span class="p-sku">Mã sản phẩm: SKU21012000</span>
+                      <div class="p-price-container"> <del class="p-old-price">19.000.000</del> <span class="p-discount">-10%</span> <span class="p-price">20.000.000 <sup>đ</sup></span> </div>
+                      <div class="p-special-container">1 khuyến mãi</div>
                     </div>
-                    <div class="category-list-wrapper">
-                        <ul class="category-list">
-                            <li class="category-item">
-                               <div class="c-card-wrapper">
-                                   <div class="c-card-container">
-                                       <div class="c-thumnail">
-                                           <img src="/assets/img/cam-outdoor.png" alt="" class="fit-img">
-                                       </div>
-                                       <div class="c-text">
-                                           <span class="c-name">Camera outdoor</span>
-                                       </div>
-                                   </div>
-                               </div>                              
-                            </li> 
-                            <li class="category-item">
-                               <div class="c-card-wrapper">
-                                   <div class="c-card-container">
-                                       <div class="c-thumnail">
-                                           <img src="/assets/img/cam-outdoor.png" alt="" class="fit-img">
-                                       </div>
-                                       <div class="c-text">
-                                           <span class="c-name">Camera outdoor</span>
-                                       </div>
-                                   </div>
-                               </div>                              
-                            </li> 
-                            <li class="category-item">
-                               <div class="c-card-wrapper">
-                                   <div class="c-card-container">
-                                       <div class="c-thumnail">
-                                           <img src="/assets/img/cam-outdoor.png" alt="" class="fit-img">
-                                       </div>
-                                       <div class="c-text">
-                                           <span class="c-name">Camera outdoor</span>
-                                       </div>
-                                   </div>
-                               </div>                              
-                            </li> 
-                            <li class="category-item">
-                               <div class="c-card-wrapper">
-                                   <div class="c-card-container">
-                                       <div class="c-thumnail">
-                                           <img src="/assets/img/cam-outdoor.png" alt="" class="fit-img">
-                                       </div>
-                                       <div class="c-text">
-                                           <span class="c-name">Camera outdoor</span>
-                                       </div>
-                                   </div>
-                               </div>                              
-                            </li> 
-                            <li class="category-item">
-                               <div class="c-card-wrapper">
-                                   <div class="c-card-container">
-                                       <div class="c-thumnail">
-                                           <img src="/assets/img/cam-outdoor.png" alt="" class="fit-img">
-                                       </div>
-                                       <div class="c-text">
-                                           <span class="c-name">Camera outdoor</span>
-                                       </div>
-                                   </div>
-                               </div>                              
-                            </li> 
-                        </ul>
+                    <div class="p-relative">
+                      <button class="btn btn-primary quick-view">Quick view</button>
+                      <button class="btn btn-primary add">Add to cart</button>
                     </div>
-                    <div class="product-more">
-                        <span><a href="">View all >></a></span>
-                    </div>
-            </section>
-            <section class="product-wrapper">
-                <div class="wide product-container">
-                    <div class="product-box-title">
-                        <span class="box-title">Products</span>
-                    </div>
-                    <div class="product-list-wrapper">
-                        <ul class="product-list">
-                            <li class="product-item">
-                                <div class="p-card-wrapper">
-                                    <div class="p-card-container">
-                                        <div class="p-ribbon">
-                                            <span class="ribbon ribbon--new">New</span>
-                                        </div>
-                                        <a href="" class="p-img">
-                                            <img src="/assets/img/cam3.png" alt="" class="fit-img">
-                                        </a>
-                                        <div class="p-text">
-                                            <a href="" class="p-name">Máy ảnh Canon chính hãng Lê Bảo Minh nhập khẩu </a>
-                                            <span class="p-sku">Mã sản phẩm: SKU21012000</span>
-                                            <div class="p-price-container">
-                                                <del class="p-old-price">19.000.000</del>
-                                                <span class="p-discount">-10%</span>
-                                                <span class="p-price">20.000.000 <sup>đ</sup></span>
-                                            </div>
-                                            <div class="p-special-container">1 khuyến mãi</div>
-                                        </div>
-                                        <!-- <div class="p-tooltip">
-                            
-                                            <p class="p-tooltip-title">Máy ảnh Canon chính hãng</p>
-                                            <p class="tooltip-content">
-                                            <div class="tooltip-specialOffer">
-                                                <div class="special-title">
-                                                    <span class="title-text">Khuyến mãi</span>
-                                                </div>
-                                                <ul class="ul">
-                                                    <li>
-                                                        <span class="text">Giá trị quà tặng lên đến 800k bao gồm</span>
-                                                    </li>
-                                                    <li>
-                                                        <span class="text">Túi đựng chống ấm</span>
-                                                    </li>
-                                                    <li>
-                                                        <span class="text">Túi đựng chống ấm</span>
-                                                    </li>
-                                                    <li>
-                                                        <span class="text">Túi đựng chống ấm</span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="tooltip-summary">
-                                                <span class="item">
-                                                    <i class="fa fa-check-circle">
-                                                        CPU: Intel® Core™ I5-9300HF (2.40 GHz upto 4.10 GHz, 8MB)
-                                                    </i>
-                                                </span>
-                                                <span class="item">
-                                                    <i class="fa fa-check-circle"></i>
-                                                </span>
-                                                <span class="item">
-                                                    <i class="fa fa-check-circle"></i>
-                                                </span>
-                                                <span class="item"><i class="fa fa-check-circle"></i>
-                                                </span>
-                                            </div>
-                                            <div class="position-relative">
-                                                <del class="p-old-price">19.000.000 VND</del>
-                                                <span class="p-tag p-discount">-10%</span>
-                                                <span class="p-price">20.000.000 VND</span>
-                                            </div>
-                                            </p>
-                                        </div> -->
-                                        <div class="p-relative">
-                                            <button class="btn btn-primary quick-view">Quick view</button>
-                                            <button class="btn btn-primary add">Add to cart</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="product-item">
-                                <div class="p-card-wrapper">
-                                    <div class="p-card-container">
-                                        <div class="p-ribbon">
-                                            <span class="ribbon ribbon--new">New</span>
-                                        </div>
-                                        <a href="" class="p-img">
-                                            <img src="/assets/img/cam3.png" alt="" class="fit-img">
-                                        </a>
-                                        <div class="p-text">
-                                            <a href="" class="p-name">Máy ảnh Canon chính hãng</a>
-                                            <span class="p-sku">Mã sản phẩm: SKU21012000</span>
-                                            <div class="p-price-container">
-                                                <del class="p-old-price">19.000.000</del>
-                                                <span class="p-discount">-10%</span>
-                                                <span class="p-price">20.000.000 <sup>đ</sup></span>
-                                            </div>
-                                            <div class="p-special-container">1 khuyến mãi</div>
-                                        </div>
-                                        <!-- <div class="p-tooltip">
-                            
-                                            <p class="p-tooltip-title">Máy ảnh Canon chính hãng</p>
-                                            <p class="tooltip-content">
-                                            <div class="tooltip-specialOffer">
-                                                <div class="special-title">
-                                                    <span class="title-text">Khuyến mãi</span>
-                                                </div>
-                                                <ul class="ul">
-                                                    <li>
-                                                        <span class="text">Giá trị quà tặng lên đến 800k bao gồm</span>
-                                                    </li>
-                                                    <li>
-                                                        <span class="text">Túi đựng chống ấm</span>
-                                                    </li>
-                                                    <li>
-                                                        <span class="text">Túi đựng chống ấm</span>
-                                                    </li>
-                                                    <li>
-                                                        <span class="text">Túi đựng chống ấm</span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="tooltip-summary">
-                                                <span class="item">
-                                                    <i class="fa fa-check-circle">
-                                                        CPU: Intel® Core™ I5-9300HF (2.40 GHz upto 4.10 GHz, 8MB)
-                                                    </i>
-                                                </span>
-                                                <span class="item">
-                                                    <i class="fa fa-check-circle"></i>
-                                                </span>
-                                                <span class="item">
-                                                    <i class="fa fa-check-circle"></i>
-                                                </span>
-                                                <span class="item"><i class="fa fa-check-circle"></i>
-                                                </span>
-                                            </div>
-                                            <div class="position-relative">
-                                                <del class="p-old-price">19.000.000 VND</del>
-                                                <span class="p-tag p-discount">-10%</span>
-                                                <span class="p-price">20.000.000 VND</span>
-                                            </div>
-                                            </p>
-                                        </div> -->
-                                        <div class="p-relative">
-                                            <button class="btn btn-primary quick-view">Quick view</button>
-                                            <button class="btn btn-primary add">Add to cart</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="product-item">
-                                <div class="p-card-wrapper">
-                                    <div class="p-card-container">
-                                        <div class="p-ribbon">
-                                            <span class="ribbon ribbon--new">New</span>
-                                        </div>
-                                        <a href="" class="p-img">
-                                            <img src="/assets/img/cam3.png" alt="" class="fit-img">
-                                        </a>
-                                        <div class="p-text">
-                                            <a href="" class="p-name">Máy ảnh Canon chính hãng</a>
-                                            <span class="p-sku">Mã sản phẩm: SKU21012000</span>
-                                            <div class="p-price-container">
-                                                <del class="p-old-price">19.000.000</del>
-                                                <span class="p-discount">-10%</span>
-                                                <span class="p-price">20.000.000 <sup>đ</sup></span>
-                                            </div>
-                                            <div class="p-special-container">1 khuyến mãi</div>
-                                        </div>
-                                        <!-- <div class="p-tooltip">
-                            
-                                            <p class="p-tooltip-title">Máy ảnh Canon chính hãng</p>
-                                            <p class="tooltip-content">
-                                            <div class="tooltip-specialOffer">
-                                                <div class="special-title">
-                                                    <span class="title-text">Khuyến mãi</span>
-                                                </div>
-                                                <ul class="ul">
-                                                    <li>
-                                                        <span class="text">Giá trị quà tặng lên đến 800k bao gồm</span>
-                                                    </li>
-                                                    <li>
-                                                        <span class="text">Túi đựng chống ấm</span>
-                                                    </li>
-                                                    <li>
-                                                        <span class="text">Túi đựng chống ấm</span>
-                                                    </li>
-                                                    <li>
-                                                        <span class="text">Túi đựng chống ấm</span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="tooltip-summary">
-                                                <span class="item">
-                                                    <i class="fa fa-check-circle">
-                                                        CPU: Intel® Core™ I5-9300HF (2.40 GHz upto 4.10 GHz, 8MB)
-                                                    </i>
-                                                </span>
-                                                <span class="item">
-                                                    <i class="fa fa-check-circle"></i>
-                                                </span>
-                                                <span class="item">
-                                                    <i class="fa fa-check-circle"></i>
-                                                </span>
-                                                <span class="item"><i class="fa fa-check-circle"></i>
-                                                </span>
-                                            </div>
-                                            <div class="position-relative">
-                                                <del class="p-old-price">19.000.000 VND</del>
-                                                <span class="p-tag p-discount">-10%</span>
-                                                <span class="p-price">20.000.000 VND</span>
-                                            </div>
-                                            </p>
-                                        </div> -->
-                                        <div class="p-relative">
-                                            <button class="btn btn-primary quick-view">Quick view</button>
-                                            <button class="btn btn-primary add">Add to cart</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="product-item">
-                                <div class="p-card-wrapper">
-                                    <div class="p-card-container">
-                                        <div class="p-ribbon">
-                                            <span class="ribbon ribbon--new">New</span>
-                                        </div>
-                                        <a href="" class="p-img">
-                                            <img src="/assets/img/cam3.png" alt="" class="fit-img">
-                                        </a>
-                                        <div class="p-text">
-                                            <a href="" class="p-name">Máy ảnh Canon chính hãng</a>
-                                            <span class="p-sku">Mã sản phẩm: SKU21012000</span>
-                                            <div class="p-price-container">
-                                                <del class="p-old-price">19.000.000</del>
-                                                <span class="p-discount">-10%</span>
-                                                <span class="p-price">20.000.000 <sup>đ</sup></span>
-                                            </div>
-                                            <div class="p-special-container">1 khuyến mãi</div>
-                                        </div>
-                                        <!-- <div class="p-tooltip">
-                            
-                                            <p class="p-tooltip-title">Máy ảnh Canon chính hãng</p>
-                                            <p class="tooltip-content">
-                                            <div class="tooltip-specialOffer">
-                                                <div class="special-title">
-                                                    <span class="title-text">Khuyến mãi</span>
-                                                </div>
-                                                <ul class="ul">
-                                                    <li>
-                                                        <span class="text">Giá trị quà tặng lên đến 800k bao gồm</span>
-                                                    </li>
-                                                    <li>
-                                                        <span class="text">Túi đựng chống ấm</span>
-                                                    </li>
-                                                    <li>
-                                                        <span class="text">Túi đựng chống ấm</span>
-                                                    </li>
-                                                    <li>
-                                                        <span class="text">Túi đựng chống ấm</span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="tooltip-summary">
-                                                <span class="item">
-                                                    <i class="fa fa-check-circle">
-                                                        CPU: Intel® Core™ I5-9300HF (2.40 GHz upto 4.10 GHz, 8MB)
-                                                    </i>
-                                                </span>
-                                                <span class="item">
-                                                    <i class="fa fa-check-circle"></i>
-                                                </span>
-                                                <span class="item">
-                                                    <i class="fa fa-check-circle"></i>
-                                                </span>
-                                                <span class="item"><i class="fa fa-check-circle"></i>
-                                                </span>
-                                            </div>
-                                            <div class="position-relative">
-                                                <del class="p-old-price">19.000.000 VND</del>
-                                                <span class="p-tag p-discount">-10%</span>
-                                                <span class="p-price">20.000.000 VND</span>
-                                            </div>
-                                            </p>
-                                        </div> -->
-                                        <div class="p-relative">
-                                            <button class="btn btn-primary quick-view">Quick view</button>
-                                            <button class="btn btn-primary add">Add to cart</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="product-item">
-                                <div class="p-card-wrapper">
-                                    <div class="p-card-container">
-                                        <div class="p-ribbon">
-                                            <span class="ribbon ribbon--new">New</span>
-                                        </div>
-                                        <a href="" class="p-img">
-                                            <img src="/assets/img/cam3.png" alt="" class="fit-img">
-                                        </a>
-                                        <div class="p-text">
-                                            <a href="" class="p-name">Máy ảnh Canon chính hãng</a>
-                                            <span class="p-sku">Mã sản phẩm: SKU21012000</span>
-                                            <div class="p-price-container">
-                                                <del class="p-old-price">19.000.000</del>
-                                                <span class="p-discount">-10%</span>
-                                                <span class="p-price">20.000.000 <sup>đ</sup></span>
-                                            </div>
-                                            <div class="p-special-container">1 khuyến mãi</div>
-                                        </div>
-                                        <!-- <div class="p-tooltip">
-                            
-                                            <p class="p-tooltip-title">Máy ảnh Canon chính hãng</p>
-                                            <p class="tooltip-content">
-                                            <div class="tooltip-specialOffer">
-                                                <div class="special-title">
-                                                    <span class="title-text">Khuyến mãi</span>
-                                                </div>
-                                                <ul class="ul">
-                                                    <li>
-                                                        <span class="text">Giá trị quà tặng lên đến 800k bao gồm</span>
-                                                    </li>
-                                                    <li>
-                                                        <span class="text">Túi đựng chống ấm</span>
-                                                    </li>
-                                                    <li>
-                                                        <span class="text">Túi đựng chống ấm</span>
-                                                    </li>
-                                                    <li>
-                                                        <span class="text">Túi đựng chống ấm</span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="tooltip-summary">
-                                                <span class="item">
-                                                    <i class="fa fa-check-circle">
-                                                        CPU: Intel® Core™ I5-9300HF (2.40 GHz upto 4.10 GHz, 8MB)
-                                                    </i>
-                                                </span>
-                                                <span class="item">
-                                                    <i class="fa fa-check-circle"></i>
-                                                </span>
-                                                <span class="item">
-                                                    <i class="fa fa-check-circle"></i>
-                                                </span>
-                                                <span class="item"><i class="fa fa-check-circle"></i>
-                                                </span>
-                                            </div>
-                                            <div class="position-relative">
-                                                <del class="p-old-price">19.000.000 VND</del>
-                                                <span class="p-tag p-discount">-10%</span>
-                                                <span class="p-price">20.000.000 VND</span>
-                                            </div>
-                                            </p>
-                                        </div> -->
-                                        <div class="p-relative">
-                                            <button class="btn btn-primary quick-view">Quick view</button>
-                                            <button class="btn btn-primary add">Add to cart</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="product-more">
-                        <span>
-                            <a href="">View all >></a>
-                        </span>
-                    </div>
+                  </div>
                 </div>
-            </section>
-        </main>
-        <footer class="footer">
-            <div class="footer-wrapper">
-                <div class="wide footer-container">
-                    <div class="noidung">
-                        <h2>VỀ CHÚNG TÔI</h2>
-                        <p>Luôn mang lại những sản phẩm tốt nhất, cùng với uy tín và chất lượng.</p>
-                        <p>kết nối với chúng tôi:</p>
-                        <ul class="icon">
-                            <li><a href="#"><img src="/assets/img/fb.png" width="30"height="30"></a></li>
-                            <li><a href="#"><img src="assets/img/ig.png" width="30"height="30"></a></li>
-                            <li><a href="#"><img src="assets/img/youtube.png" width="30"height="30"></a></li>
-                        </ul>
+              </li>
+              <li class="product-item">
+                <div class="p-card-wrapper">
+                  <div class="p-card-container">
+                    <div class="p-ribbon"> <span class="ribbon ribbon--new">New</span> </div>
+                    <a href="" class="p-img"> <img src="./assets/img/cam3.png" alt="" class="fit-img"> </a>
+                    <div class="p-text"> <a href="" class="p-name">Máy ảnh Canon chính hãng</a> <span class="p-sku">Mã sản phẩm: SKU21012000</span>
+                      <div class="p-price-container"> <del class="p-old-price">19.000.000</del> <span class="p-discount">-10%</span> <span class="p-price">20.000.000 <sup>đ</sup></span> </div>
+                      <div class="p-special-container">1 khuyến mãi</div>
                     </div>
-                    <div class="chinhsach">
-                        <h2>CHÍNH SÁCH CÔNG TY</h2>
-                        <ul class="ul-cs">
-                            <li><a href="#">Quy định và hình thức thanh toán</a></li>
-                            <li><a href="#">Chính sách vận chuyển,giao nhận</a></li>
-                            <li><a href="#">Chính sách đổi, trả hàng</a></li>
-                            <li><a href="#">Chính sách bảo hành</a></li>
-                        </ul>
+                    <div class="p-relative">
+                      <button class="btn btn-primary quick-view">Quick view</button>
+                      <button class="btn btn-primary add">Add to cart</button>
                     </div>
-                    <div class="lienhe">
-                    <h2>THÔNG TIN LIÊN HỆ</h2>
-                        <ul class="thongtin">
-                            <li>Địa chỉ: Số 123, đường Nguyễn Trãi, Quận Thanh Xuân, Hà Nội</li>
-                            <li>Đường dây nóng: 19001001</li>
-                            <li>email: cameraso1@gmail.com</li>
-                        </ul>
-                    </div>
+                  </div>
                 </div>
-            </div>
-        </footer>
-    </div>
+              </li>
+              <li class="product-item">
+                <div class="p-card-wrapper">
+                  <div class="p-card-container">
+                    <div class="p-ribbon"> <span class="ribbon ribbon--new">New</span> </div>
+                    <a href="" class="p-img"> <img src="./assets/img/cam3.png" alt="" class="fit-img"> </a>
+                    <div class="p-text"> <a href="" class="p-name">Máy ảnh Canon chính hãng</a> <span class="p-sku">Mã sản phẩm: SKU21012000</span>
+                      <div class="p-price-container"> <del class="p-old-price">19.000.000</del> <span class="p-discount">-10%</span> <span class="p-price">20.000.000 <sup>đ</sup></span> </div>
+                      <div class="p-special-container">1 khuyến mãi</div>
+                    </div>
+                    <div class="p-relative">
+                      <button class="btn btn-primary quick-view">Quick view</button>
+                      <button class="btn btn-primary add">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="product-item">
+                <div class="p-card-wrapper">
+                  <div class="p-card-container">
+                    <div class="p-ribbon"> <span class="ribbon ribbon--new">New</span> </div>
+                    <a href="" class="p-img"> <img src="./assets/img/cam3.png" alt="" class="fit-img"> </a>
+                    <div class="p-text"> <a href="" class="p-name">Máy ảnh Canon chính hãng</a> <span class="p-sku">Mã sản phẩm: SKU21012000</span>
+                      <div class="p-price-container"> <del class="p-old-price">19.000.000</del> <span class="p-discount">-10%</span> <span class="p-price">20.000.000 <sup>đ</sup></span> </div>
+                      <div class="p-special-container">1 khuyến mãi</div>
+                    </div>
+                    <div class="p-relative">
+                      <button class="btn btn-primary quick-view">Quick view</button>
+                      <button class="btn btn-primary add">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="product-more"> <span> <a href="">View all >></a> </span> </div>
+        </div>
+      </section>
+      <section class="category-wrapper">
+        <div class="wide category-container">
+          <div class="category-box-title"> <span class="box-title">Categories</span> </div>
+          <div class="category-list-wrapper">
+            <ul class="category-list">
+              <li class="category-item">
+                <div class="c-card-wrapper">
+                  <div class="c-card-container">
+                    <div class="c-thumnail"> <img src="./assets/img/cam-outdoor.png" alt="" class="fit-img"> </div>
+                    <div class="c-text"> <span class="c-name">Camera outdoor</span> </div>
+                  </div>
+                </div>
+              </li>
+              <li class="category-item">
+                <div class="c-card-wrapper">
+                  <div class="c-card-container">
+                    <div class="c-thumnail"> <img src="./assets/img/cam-outdoor.png" alt="" class="fit-img"> </div>
+                    <div class="c-text"> <span class="c-name">Camera outdoor</span> </div>
+                  </div>
+                </div>
+              </li>
+              <li class="category-item">
+                <div class="c-card-wrapper">
+                  <div class="c-card-container">
+                    <div class="c-thumnail"> <img src="./assets/img/cam-outdoor.png" alt="" class="fit-img"> </div>
+                    <div class="c-text"> <span class="c-name">Camera outdoor</span> </div>
+                  </div>
+                </div>
+              </li>
+              <li class="category-item">
+                <div class="c-card-wrapper">
+                  <div class="c-card-container">
+                    <div class="c-thumnail"> <img src="./assets/img/cam-outdoor.png" alt="" class="fit-img"> </div>
+                    <div class="c-text"> <span class="c-name">Camera outdoor</span> </div>
+                  </div>
+                </div>
+              </li>
+              <li class="category-item">
+                <div class="c-card-wrapper">
+                  <div class="c-card-container">
+                    <div class="c-thumnail"> <img src="./assets/img/cam-outdoor.png" alt="" class="fit-img"> </div>
+                    <div class="c-text"> <span class="c-name">Camera outdoor</span> </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="product-more"> <span><a href="">View all >></a></span> </div>
+        </div>
+      </section>
+      <section class="product-wrapper">
+        <div class="wide product-container">
+          <div class="product-box-title"> <span class="box-title">Products</span> </div>
+          <div class="product-list-wrapper">
+            <ul class="product-list">
+              <li class="product-item">
+                <div class="p-card-wrapper">
+                  <div class="p-card-container">
+                    <div class="p-ribbon"> <span class="ribbon ribbon--new">New</span> </div>
+                    <a href="" class="p-img"> <img src="./assets/img/cam3.png" alt="" class="fit-img"> </a>
+                    <div class="p-text"> <a href="" class="p-name">Máy ảnh Canon chính hãng Lê Bảo Minh nhập khẩu </a> <span class="p-sku">Mã sản phẩm: SKU21012000</span>
+                      <div class="p-price-container"> <del class="p-old-price">19.000.000</del> <span class="p-discount">-10%</span> <span class="p-price">20.000.000 <sup>đ</sup></span> </div>
+                      <div class="p-special-container">1 khuyến mãi</div>
+                    </div>
+                    <!-- <div class="p-tooltip">
+                            
+                                            <p class="p-tooltip-title">Máy ảnh Canon chính hãng</p>
+                                            <p class="tooltip-content">
+                                            <div class="tooltip-specialOffer">
+                                                <div class="special-title">
+                                                    <span class="title-text">Khuyến mãi</span>
+                                                </div>
+                                                <ul class="ul">
+                                                    <li>
+                                                        <span class="text">Giá trị quà tặng lên đến 800k bao gồm</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="text">Túi đựng chống ấm</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="text">Túi đựng chống ấm</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="text">Túi đựng chống ấm</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="tooltip-summary">
+                                                <span class="item">
+                                                    <i class="fa fa-check-circle">
+                                                        CPU: Intel® Core™ I5-9300HF (2.40 GHz upto 4.10 GHz, 8MB)
+                                                    </i>
+                                                </span>
+                                                <span class="item">
+                                                    <i class="fa fa-check-circle"></i>
+                                                </span>
+                                                <span class="item">
+                                                    <i class="fa fa-check-circle"></i>
+                                                </span>
+                                                <span class="item"><i class="fa fa-check-circle"></i>
+                                                </span>
+                                            </div>
+                                            <div class="position-relative">
+                                                <del class="p-old-price">19.000.000 VND</del>
+                                                <span class="p-tag p-discount">-10%</span>
+                                                <span class="p-price">20.000.000 VND</span>
+                                            </div>
+                                            </p>
+                                        </div> -->
+                    <div class="p-relative">
+                      <button class="btn btn-primary quick-view">Quick view</button>
+                      <button class="btn btn-primary add">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="product-item">
+                <div class="p-card-wrapper">
+                  <div class="p-card-container">
+                    <div class="p-ribbon"> <span class="ribbon ribbon--new">New</span> </div>
+                    <a href="" class="p-img"> <img src="./assets/img/cam3.png" alt="" class="fit-img"> </a>
+                    <div class="p-text"> <a href="" class="p-name">Máy ảnh Canon chính hãng</a> <span class="p-sku">Mã sản phẩm: SKU21012000</span>
+                      <div class="p-price-container"> <del class="p-old-price">19.000.000</del> <span class="p-discount">-10%</span> <span class="p-price">20.000.000 <sup>đ</sup></span> </div>
+                      <div class="p-special-container">1 khuyến mãi</div>
+                    </div>
+                    <!-- <div class="p-tooltip">
+                            
+                                            <p class="p-tooltip-title">Máy ảnh Canon chính hãng</p>
+                                            <p class="tooltip-content">
+                                            <div class="tooltip-specialOffer">
+                                                <div class="special-title">
+                                                    <span class="title-text">Khuyến mãi</span>
+                                                </div>
+                                                <ul class="ul">
+                                                    <li>
+                                                        <span class="text">Giá trị quà tặng lên đến 800k bao gồm</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="text">Túi đựng chống ấm</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="text">Túi đựng chống ấm</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="text">Túi đựng chống ấm</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="tooltip-summary">
+                                                <span class="item">
+                                                    <i class="fa fa-check-circle">
+                                                        CPU: Intel® Core™ I5-9300HF (2.40 GHz upto 4.10 GHz, 8MB)
+                                                    </i>
+                                                </span>
+                                                <span class="item">
+                                                    <i class="fa fa-check-circle"></i>
+                                                </span>
+                                                <span class="item">
+                                                    <i class="fa fa-check-circle"></i>
+                                                </span>
+                                                <span class="item"><i class="fa fa-check-circle"></i>
+                                                </span>
+                                            </div>
+                                            <div class="position-relative">
+                                                <del class="p-old-price">19.000.000 VND</del>
+                                                <span class="p-tag p-discount">-10%</span>
+                                                <span class="p-price">20.000.000 VND</span>
+                                            </div>
+                                            </p>
+                                        </div> -->
+                    <div class="p-relative">
+                      <button class="btn btn-primary quick-view">Quick view</button>
+                      <button class="btn btn-primary add">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="product-item">
+                <div class="p-card-wrapper">
+                  <div class="p-card-container">
+                    <div class="p-ribbon"> <span class="ribbon ribbon--new">New</span> </div>
+                    <a href="" class="p-img"> <img src="./assets/img/cam3.png" alt="" class="fit-img"> </a>
+                    <div class="p-text"> <a href="" class="p-name">Máy ảnh Canon chính hãng</a> <span class="p-sku">Mã sản phẩm: SKU21012000</span>
+                      <div class="p-price-container"> <del class="p-old-price">19.000.000</del> <span class="p-discount">-10%</span> <span class="p-price">20.000.000 <sup>đ</sup></span> </div>
+                      <div class="p-special-container">1 khuyến mãi</div>
+                    </div>
+                    <!-- <div class="p-tooltip">
+                            
+                                            <p class="p-tooltip-title">Máy ảnh Canon chính hãng</p>
+                                            <p class="tooltip-content">
+                                            <div class="tooltip-specialOffer">
+                                                <div class="special-title">
+                                                    <span class="title-text">Khuyến mãi</span>
+                                                </div>
+                                                <ul class="ul">
+                                                    <li>
+                                                        <span class="text">Giá trị quà tặng lên đến 800k bao gồm</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="text">Túi đựng chống ấm</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="text">Túi đựng chống ấm</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="text">Túi đựng chống ấm</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="tooltip-summary">
+                                                <span class="item">
+                                                    <i class="fa fa-check-circle">
+                                                        CPU: Intel® Core™ I5-9300HF (2.40 GHz upto 4.10 GHz, 8MB)
+                                                    </i>
+                                                </span>
+                                                <span class="item">
+                                                    <i class="fa fa-check-circle"></i>
+                                                </span>
+                                                <span class="item">
+                                                    <i class="fa fa-check-circle"></i>
+                                                </span>
+                                                <span class="item"><i class="fa fa-check-circle"></i>
+                                                </span>
+                                            </div>
+                                            <div class="position-relative">
+                                                <del class="p-old-price">19.000.000 VND</del>
+                                                <span class="p-tag p-discount">-10%</span>
+                                                <span class="p-price">20.000.000 VND</span>
+                                            </div>
+                                            </p>
+                                        </div> -->
+                    <div class="p-relative">
+                      <button class="btn btn-primary quick-view">Quick view</button>
+                      <button class="btn btn-primary add">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="product-item">
+                <div class="p-card-wrapper">
+                  <div class="p-card-container">
+                    <div class="p-ribbon"> <span class="ribbon ribbon--new">New</span> </div>
+                    <a href="" class="p-img"> <img src="./assets/img/cam3.png" alt="" class="fit-img"> </a>
+                    <div class="p-text"> <a href="" class="p-name">Máy ảnh Canon chính hãng</a> <span class="p-sku">Mã sản phẩm: SKU21012000</span>
+                      <div class="p-price-container"> <del class="p-old-price">19.000.000</del> <span class="p-discount">-10%</span> <span class="p-price">20.000.000 <sup>đ</sup></span> </div>
+                      <div class="p-special-container">1 khuyến mãi</div>
+                    </div>
+                    <!-- <div class="p-tooltip">
+                            
+                                            <p class="p-tooltip-title">Máy ảnh Canon chính hãng</p>
+                                            <p class="tooltip-content">
+                                            <div class="tooltip-specialOffer">
+                                                <div class="special-title">
+                                                    <span class="title-text">Khuyến mãi</span>
+                                                </div>
+                                                <ul class="ul">
+                                                    <li>
+                                                        <span class="text">Giá trị quà tặng lên đến 800k bao gồm</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="text">Túi đựng chống ấm</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="text">Túi đựng chống ấm</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="text">Túi đựng chống ấm</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="tooltip-summary">
+                                                <span class="item">
+                                                    <i class="fa fa-check-circle">
+                                                        CPU: Intel® Core™ I5-9300HF (2.40 GHz upto 4.10 GHz, 8MB)
+                                                    </i>
+                                                </span>
+                                                <span class="item">
+                                                    <i class="fa fa-check-circle"></i>
+                                                </span>
+                                                <span class="item">
+                                                    <i class="fa fa-check-circle"></i>
+                                                </span>
+                                                <span class="item"><i class="fa fa-check-circle"></i>
+                                                </span>
+                                            </div>
+                                            <div class="position-relative">
+                                                <del class="p-old-price">19.000.000 VND</del>
+                                                <span class="p-tag p-discount">-10%</span>
+                                                <span class="p-price">20.000.000 VND</span>
+                                            </div>
+                                            </p>
+                                        </div> -->
+                    <div class="p-relative">
+                      <button class="btn btn-primary quick-view">Quick view</button>
+                      <button class="btn btn-primary add">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="product-item">
+                <div class="p-card-wrapper">
+                  <div class="p-card-container">
+                    <div class="p-ribbon"> <span class="ribbon ribbon--new">New</span> </div>
+                    <a href="" class="p-img"> <img src="./assets/img/cam3.png" alt="" class="fit-img"> </a>
+                    <div class="p-text"> <a href="" class="p-name">Máy ảnh Canon chính hãng</a> <span class="p-sku">Mã sản phẩm: SKU21012000</span>
+                      <div class="p-price-container"> <del class="p-old-price">19.000.000</del> <span class="p-discount">-10%</span> <span class="p-price">20.000.000 <sup>đ</sup></span> </div>
+                      <div class="p-special-container">1 khuyến mãi</div>
+                    </div>
+                    <!-- <div class="p-tooltip">
+                            
+                                            <p class="p-tooltip-title">Máy ảnh Canon chính hãng</p>
+                                            <p class="tooltip-content">
+                                            <div class="tooltip-specialOffer">
+                                                <div class="special-title">
+                                                    <span class="title-text">Khuyến mãi</span>
+                                                </div>
+                                                <ul class="ul">
+                                                    <li>
+                                                        <span class="text">Giá trị quà tặng lên đến 800k bao gồm</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="text">Túi đựng chống ấm</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="text">Túi đựng chống ấm</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="text">Túi đựng chống ấm</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="tooltip-summary">
+                                                <span class="item">
+                                                    <i class="fa fa-check-circle">
+                                                        CPU: Intel® Core™ I5-9300HF (2.40 GHz upto 4.10 GHz, 8MB)
+                                                    </i>
+                                                </span>
+                                                <span class="item">
+                                                    <i class="fa fa-check-circle"></i>
+                                                </span>
+                                                <span class="item">
+                                                    <i class="fa fa-check-circle"></i>
+                                                </span>
+                                                <span class="item"><i class="fa fa-check-circle"></i>
+                                                </span>
+                                            </div>
+                                            <div class="position-relative">
+                                                <del class="p-old-price">19.000.000 VND</del>
+                                                <span class="p-tag p-discount">-10%</span>
+                                                <span class="p-price">20.000.000 VND</span>
+                                            </div>
+                                            </p>
+                                        </div> -->
+                    <div class="p-relative">
+                      <button class="btn btn-primary quick-view">Quick view</button>
+                      <button class="btn btn-primary add">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="product-more"> <span> <a href="">View all >></a> </span> </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <div class="wide footer-container">
+          <div class="noidung">
+            <h2>VỀ CHÚNG TÔI</h2>
+            <p>Luôn mang lại những sản phẩm tốt nhất, cùng với uy tín và chất lượng.</p>
+            <p>Kết nối với chúng tôi:</p>
+            <ul class="icon">
+              <li><a href="#"><img src="./assets/img/fb.png" width="30"height="30"/></a></li>
+              <li><a href="#"><img src="./assets/img/ig.png" width="30"height="30"/></a></li>
+              <li><a href="#"><img src="./assets/img/youtube.png" width="30"height="30"/></a></li>
+            </ul>
+          </div>
+          <div class="chinhsach">
+            <h2>CHÍNH SÁCH CÔNG TY</h2>
+            <ul class="ul-cs">
+              <li><a href="#">Quy định và hình thức thanh toán</a></li>
+              <li><a href="#">Chính sách vận chuyển,giao nhận</a></li>
+              <li><a href="#">Chính sách đổi, trả hàng</a></li>
+              <li><a href="#">Chính sách bảo hành</a></li>
+            </ul>
+          </div>
+          <div class="lienhe">
+            <h2>THÔNG TIN LIÊN HỆ</h2>
+            <ul class="thongtin">
+              <li>Địa chỉ: Số 123, đường Nguyễn Trãi, Quận Thanh Xuân, Hà Nội</li>
+              <li>Đường dây nóng: 19001001</li>
+              <li>email: cameraso1@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
 </div>
 </body>
 </html>
