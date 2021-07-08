@@ -51,9 +51,15 @@
 }
 */
 .sidenav {
-  padding: 20px 0;
+  padding: 20px 0px;
   height: 100%;
-
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.sidenav img{
+	width: 184px;
+	height: 557.6px;
 }
 .box-main{
 	padding: 20px 0;
